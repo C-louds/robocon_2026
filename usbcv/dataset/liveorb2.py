@@ -44,7 +44,7 @@ def identify(edges):
     return best_label, best_score, kp_live
 
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(4)
 if not cap.isOpened():
     raise RuntimeError("❌ Could not open camera")
 

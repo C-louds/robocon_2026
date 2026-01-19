@@ -16,7 +16,7 @@ bf = cv2.BFMatcher(cv2.NORM_HAMMING)
 def preprocess(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     blur = cv2.GaussianBlur(gray, (3, 3), 0)
-    edges = cv2.Canny(blur, 50, 150)
+    edges = cv2.Canny(blur, 20, 130)
     return edges
 
 
@@ -52,12 +52,12 @@ def identify_and_bbox(edges):
     return best_label, best_score, best_points
 
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(4)
 if not cap.isOpened():
     raise RuntimeError("Could not open camera")
 
 print("Press 'q' to quit")
-wl,wh = 16*70,9*70
+wh,wl = 16*70,9*70
 while True:
     ret, frame = cap.read()
     if not ret:
