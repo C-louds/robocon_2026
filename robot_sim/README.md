@@ -5,7 +5,7 @@ To view in rviz,
 roslaunch bcr_bot rviz.launch
 ```
 
-To view in rviz,
+To view in gazebo,
 ```
 roslaunch bcr_bot bcr_bot_gazebo_spawn.launch
 ```
