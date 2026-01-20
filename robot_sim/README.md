@@ -1,13 +1,12 @@
 
-```
+
 To view in rviz,
-```bash
+```
 roslaunch bcr_bot rviz.launch
 ```
 
-```
 To view in rviz,
-```bash
+```
 roslaunch bcr_bot bcr_bot_gazebo_spawn.launch
 ```
 
