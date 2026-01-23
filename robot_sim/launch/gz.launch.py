@@ -13,7 +13,7 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration("use_sim_time", default=True)
 
     bcr_bot_path = get_package_share_directory("bcr_bot")
-    world_file = LaunchConfiguration("world_file", default = join(bcr_bot_path, "worlds", "small_warehouse.sdf"))
+    world_file = LaunchConfiguration("world_file", default = join(bcr_bot_path, "worlds", "empty.sdf"))
     gz_sim_share = get_package_share_directory("ros_gz_sim")
 
     gz_sim = IncludeLaunchDescription(

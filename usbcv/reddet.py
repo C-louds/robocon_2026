@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-cap = cv2.VideoCapture(0)   # change index if needed
+cap = cv2.VideoCapture(2)   # change index if needed
 
 if not cap.isOpened():
     print("❌ Camera not opened")
